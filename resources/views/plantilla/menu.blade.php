@@ -22,9 +22,9 @@
 </li>
 <li class="xn-title">Navegación</li>
 <li class="active">
-    <a href="{{route('home')}}"><span class="fa fa-desktop"></span> <span class="xn-text">Inicio</span></a>                        
+    <a href="/"><span class="fa fa-desktop"></span> <span class="xn-text">Inicio</span></a>                        
 </li>                    
-<
+
 <li>
     <a href="{{route('categoria.index')}}"><span class="fa fa-qrcode"></span> <span class="xn-text">Categorias</span></a>
 </li>

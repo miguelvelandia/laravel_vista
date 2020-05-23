@@ -48,7 +48,7 @@
   <h2><span class="fa fa-arrow-circle-o-left"></span> <b>Registrar</b></h2>
 @endsection
 
-@section('men')
+@section('menubar')
     <li><a href="#">Home</a></li>                    
-    <li class="active">Dashboard</li>
+    <li class="active">Categoria</li>
 @endsection

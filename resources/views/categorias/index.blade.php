@@ -6,7 +6,7 @@
     <div class="col-md-12">
         <div class="panel panel-default">
         <div class="panel-heading">
-            <h2 class="panel-title">Informe de categorias</h2>
+            <h2 class="panel-title">Informe de categorias </h2>
                 <div class="btn-group pull-right">
                     <a href="{{route('categoria.create')}}" class="btn btn-danger"><i class="fa fa-bars"></i>Nueva categoria</a>
                 </div>                                                       
@@ -58,7 +58,7 @@
   <h2><span class="fa fa-arrow-circle-o-left"></span> <b>Categorias</b></h2>
 @endsection
 
-@section('men')
+@section('menubar')
     <li><a href="#">Home</a></li>                    
-    <li class="active">Dashboard</li>
+    <li class="active">Categorias</li>
 @endsection
