@@ -3,11 +3,23 @@
 @section('contenido')
 <!-- START RESPONSIVE TABLES -->
 <div class="row">
+@if (count($errors) > 0)
+    <div class="alert alert-danger">
+        <strong>Whoops!</strong> Tienes errores en estos campos!.<br><br>
+        <ul>
+        @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+        </ul>
+    </div>
+@endif
+</div>
+<div class="row">
       <div class="col-md-12">
         <form class="form-horizontal" id="formcomida" name="formcomida" action="{{route('categoria.update',['id'=>$categoria->id]) }}" method="POST">
           <div class="panel panel-warning">
             @csrf
-          <input type="hidden" name="_method" value="PATCH">
+          <!--<input type="hidden" name="_method" value="PATCH">-->
             <div class="panel-heading">
               <h3 class="panel-title"><span class="fa  fa-cutlery"></span><b> Editar Categoria</b></h3>
               <ul class="panel-controls">

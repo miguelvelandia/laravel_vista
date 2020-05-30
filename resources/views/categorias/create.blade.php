@@ -2,6 +2,19 @@
 @section('titulo','Admin °| laravel')
 @section('contenido')
 <!-- START RESPONSIVE TABLES -->
+
+<div class="row">
+@if (count($errors) > 0)
+    <div class="alert alert-danger">
+        <strong>Whoops!</strong> Tienes errores en estos campos!.<br><br>
+        <ul>
+        @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+        </ul>
+    </div>
+@endif
+</div>
 <div class="row">
       <div class="col-md-12">
         <form class="form-horizontal" id="formcomida" name="formcomida" action="{{route('categoria.store')}}" method="POST">

@@ -1,5 +1,5 @@
 <li class="xn-logo">
-    <a href="index.html">Proveedores</a>
+    <a href="index.html">Restaurantes</a>
     <a href="#" class="x-navigation-control"></a>
 </li>
 <li class="xn-profile">
@@ -28,5 +28,10 @@
 <li>
     <a href="{{route('categoria.index')}}"><span class="fa fa-qrcode"></span> <span class="xn-text">Categorias</span></a>
 </li>
+
+<li>
+    <a href="{{route('producto.index')}}"><span class="fa fa-qrcode"></span> <span class="xn-text">Productos</span></a>
+</li>
+
 
 
